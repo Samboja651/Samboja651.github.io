@@ -1,12 +1,198 @@
+<!--License: https://bit.ly/3GjrtVF-->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-</head>
-<body>
-    <p>my first hosted online</p>
-</body>
+<html>
+    <head>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <div class="nav">
+    <ol>
+        <li><a href="Background.html">FamilyBackground</a></li><br/>
+        <li><a href="Education.html">Education</a></li><br/>
+        <li><a href="Entertain.html">Entertain</a></li><br/>
+        <li><a href="https://wa.link/4lqtpj"whatsapp>Whatsapp</a></li>
+    </ol>
+  </div>
+    <title>My profile</title>
+    </head>
+    <body style="background-color:aquamarine">
+        <strong style="text-align:center"></strong><br>
+<button class="mouse-cursor-gradient-tracking">
+  <h1 style="text-align: right"><span>My Life History</span></h1></button>
+      
+       
+       <h5><p style="color:rgb(251, 255, 192);font-size: 30px;text-align: center">Niajeni Wadau hope mko fiti,mbele yenu Granton waribe</p></h5>
+       <p style="font-size:35px;text-align: center">mtaani natambulika kama<mark> Samboja</mark></p>
+       <div style="flaot:center">
+       <img src="C:/Users/User/Pictures/Screenshots/IMG_20211225_150300_352.jpg"width="800"height="1000"</img>
+        </div>
+    </body>
 </html>
+<style type="text/css">
+
+    .mouse-cursor-gradient-tracking {
+      position: relative;
+      background: 
+    #afff79;
+      padding: 0.5rem 1rem;
+      font-size: 1.2rem;
+      border: none;
+      color: 
+    rgb(255, 255, 255);
+      cursor: pointer;
+      outline: none;
+      overflow: hidden;
+    }
+    
+    .mouse-cursor-gradient-tracking span {
+      position: relative;
+    }
+    
+    .mouse-cursor-gradient-tracking:before {
+      --size: 0;
+      content: '';
+      position: absolute;
+      left: var(--x);
+      top: var(--y);
+      width: var(--size);
+      height: var(--size);
+      background: radial-gradient(circle closest-side, red, transparent);
+      transform: translate(-50%, -50%);
+      transition: width 0.2s ease, height 0.2s ease;
+    }
+    
+    .mouse-cursor-gradient-tracking:hover:before {
+      --size: 200px;
+    }
+    
+    
+    </style>
+    
+
+<script>
+    let btn = document.querySelector('.mouse-cursor-gradient-tracking');
+    btn.addEventListener('mousemove', e => {
+      let rect = e.target.getBoundingClientRect();
+      let x = e.clientX - rect.left;
+      let y = e.clientY - rect.top;
+      btn.style.setProperty('--x', x + 'px');
+      btn.style.setProperty('--y', y + 'px');
+    });
+    
+    </script>
+
+<style type="text/css">
+  @import url('https://fonts.googleaapis.com/css2?
+  family=Poppin&display=swap');
+  *{
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+      font-family:'Poppins',sans-serif;
+  }
+  header{
+      width:100%;
+      height:50px;
+      background:#f8f8f8;
+      display:flex;
+      justify-content:space-around;
+      align-items:center;
+  }
+  .logo{
+      color:rgb(44,44,44);
+      font-size: 1.5em;
+  }
+  .nav{
+      display:flex;
+      align-items:center;
+  }
+  .nav ol{
+      display:flex;
+      list-style: none;
+  }
+  </style>
+  
+  <style type="text/css">
+      .btn{
+          position:relative;
+          width:25px;
+          height:25px;
+          -webkit-appearance:none;
+          appearance:none;
+          cursor:pointer;
+          display:none;
+      }
+      .btn::before{
+          content:'\f0c9';
+          position:absolute;
+          top:0;
+          left:0;
+          font-family: 'font Awsome 5 Free';
+          font-weight: 700;
+          font-size: 2em;
+      }
+      </style>
+      
+      <style type="text/css">
+          .nav ol li{margin:lem;}
+          .nav ol li a{
+              text-decoration:none;
+              padding:0.2em 1.2em 0.9em 1.2em;
+              border-radius:10px 10px 0 0;
+              color:rgb(39, 39, 39);
+              transition:all .4s;
+              position:relative;
+              z-index: 1;
+          }
+          .nav ol li a::before{
+              content:'';
+              position:absolute;
+              bottom:0%;
+              left:0%;
+              width:100%;
+              height:41px;
+              border-radius:10px 10px 0 0;
+              background:#853333;
+              transform-origin:bottom;
+              background:linear-gradient(to right,#2c5364,#203A43,#0f2027);
+              transform:scaleY(0.05);
+              z-index: -1;
+              transition:all.4s;
+          }
+          .nav ol li a:hover::before{transform: scaleY(1.1);}
+          .nav ol li a:hover{color:white;}
+          </style>
+  
+          <style type="text/css">
+              @media (max-width:1200px){
+                  .btn{
+                      display:flex;
+                      z-index: 100;
+                  }
+                  header{
+                      justify-content:space-between;
+                      padding:0 2em;
+                  }
+                  .nav{
+                      width:100%;
+                      position:absolute;
+                      top:0%;
+                      left:0%;
+                      display:flex;
+                      justify-content:center;
+                      background:#f8f8f8;
+                      transform:translateY(-110%)
+                      trasition: all.4s;
+                  }
+                  input:checked ~ .nav{transform:translateY(0%)
+                  }
+                  input:checked::before{
+                      content:'\f00d';
+                  }
+              }
+              @media (max-width:700px){
+                  .nav ol{
+                      flex-direction:column;
+                      text-align: center;
+                  }
+              }
+          </style>
